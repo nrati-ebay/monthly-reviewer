@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 24px 40px;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding: 0 24px;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: clamp(1.75rem, 2.8vw, 3.5rem);
+  font-weight: 700;
   color: #1a72bb;
   text-align: center;
-  margin: 0 0 40px;
-  letter-spacing: -0.3px;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .dropdowns {
@@ -58,23 +61,22 @@
 }
 
 .generate-btn {
-  margin-top: 32px;
-  padding: 12px 36px;
+  padding: 12px 40px;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
-  background: #1a72bb;
-  border: none;
+  color: #555;
+  background: transparent;
+  border: 2px solid #555;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.15s;
 }
 
 .generate-btn:hover {
-  background: #155f9e;
+  background: rgba(0, 0, 0, 0.06);
 }
 
 .generate-btn:focus-visible {
-  outline: 2px solid #1a72bb;
+  outline: 2px solid #555;
   outline-offset: 3px;
 }
