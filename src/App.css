@@ -1,0 +1,80 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 24px 40px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a72bb;
+  text-align: center;
+  margin: 0 0 40px;
+  letter-spacing: -0.3px;
+}
+
+.dropdowns {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+}
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.dropdown-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #555;
+}
+
+.dropdown-group select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  appearance: auto;
+  transition: border-color 0.2s;
+}
+
+.dropdown-group select:focus {
+  outline: none;
+  border-color: #1a72bb;
+  box-shadow: 0 0 0 3px rgba(26, 114, 187, 0.15);
+}
+
+.generate-btn {
+  margin-top: 32px;
+  padding: 12px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #1a72bb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.generate-btn:hover {
+  background: #155f9e;
+}
+
+.generate-btn:focus-visible {
+  outline: 2px solid #1a72bb;
+  outline-offset: 3px;
+}
